@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="/index.xhtml">
+	<ui:define name="conteudo">
+		<h:form>
+			<h:panelGrid columns="2" cellspacing="5">
+				<h:outputLabel for="nome" value="Nome:"/>
+				<p:inputText id="nome" value="#{cliente.nome}" />
+				<h:outputLabel for="endereco" value="Endereço:"/>
+				<p:inputText id="endereco" value="#{cliente.rua}" />
+				<h:outputLabel for="Número" value="Número:"/>
+				<p:inputText id="numero" value="#{cliente.numero}" />
+				<h:outputLabel for="Bairro" value="Bairro:"/>
+				<p:inputText id="Cidade" value="#{cliente.cidade}" />
+				<h:outputLabel for="UF" value="Uf:"/>
+				<p:inputText id="uf" value="#{cliente.uf}" />
+				<h:outputLabel for="telefone" value="Telefone:"/>
+				<p:inputText id="telefone" value="#{cliente.telefone}" />
+				<h:outputLabel for="email" value="E-Mail:"/>
+				<p:inputText id="email" value="#{cliente.email}" />
+				<h:commandButton value="Gravar"/>
+				<h:commandButton value="Voltar" action="cliente.xhtml"/>
+			</h:panelGrid>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

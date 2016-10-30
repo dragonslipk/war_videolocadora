@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>VideoLocadora</title>
+	<link href="reset.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+</h:head>
+<h:body>
+	<h:form>
+		<div id="header" style="padding-bottom: 10px">
+			<p:breadCrumb>
+				<p:menuitem value="Home" url="index.xhtml" />
+				<p:menuitem value="Filmes" url="produto.xhtml" />
+				<p:menuitem value="Clientes" url="cliente.xhtml" />
+				<p:menuitem value="Alugar" url="aluga.xhtml" />
+				<p:menuitem value="Consultas" url="consulta.xhtml" />
+			</p:breadCrumb>
+		</div>
+		<div id="page" style="padding: 0px 10px;">
+			<ui:insert name="conteudo">
+				<div id="banner" align="center">
+					<img src="banner.jpg" style="max-height: 600px;" />
+				</div>
+			</ui:insert>
+		</div>
+	</h:form>
+</h:body>
+</html>
